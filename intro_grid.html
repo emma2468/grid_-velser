@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 200px 200px 200px;
+            grid-gap: 4px;
+        }
+
+        .box1{
+            background-color: antiquewhite;
+            grid-column-start: 2;
+            grid-column-end: span 3;
+        }
+        .box2{
+            background-color: beige;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .box3{
+            background-color: antiquewhite;
+        }
+        .box4{
+            background-color: antiquewhite;
+        }
+        .box5{
+            background-color: antiquewhite;
+        }
+        .box6{
+            background-color: antiquewhite;
+        }
+        .box7{
+            background-color: antiquewhite;
+        }
+        .box8{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+    </main>
+
+</body>
+</html>

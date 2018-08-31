@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 230px 100px;
+            grid-gap: 4px;
+        }
+
+        .item {
+            border: 1px solid #000;
+        }
+
+        .item-a {
+            background: yellow;
+            grid-column-end: span 4;
+        }
+
+        .item-b {
+            background: green;
+            grid-column-end: span 4;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 100px;
+            grid-gap: 10px;
+
+        }
+
+        .item-c {
+            background: red;
+            grid-column-end: span 4;
+        }
+
+        .item-d {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-a"></div>
+        <div class="item item-b">
+        <div class="item item-d"></div>
+            <div class="item item-d"></div>
+            <div class="item item-d"></div>
+            <div class="item item-d"></div>
+            <div class="item item-d"></div>
+            <div class="item item-d"></div>
+            <div class="item item-d"></div>
+            <div class="item item-d"></div>
+        </div>
+        <div class="item item-c"></div>
+
+    </div>
+</body>
+</html>
